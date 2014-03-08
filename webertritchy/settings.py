@@ -22,9 +22,16 @@ SECRET_KEY = 'k@(fi18t0v&-l!gu)!a^uaqn&9*9-axkh_@pjt6!u%*ci)iv8n'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-TEMPLATE_DEBUG = True
+#TEMPLATE_DEBUG = True # dans site du zero on met DEBUG
+TEMPLATE_DEBUG = DEBUG # dans site du zero on met DEBUG
 
 ALLOWED_HOSTS = []
+
+#Je viens d'ajouter admins
+ADMINS = (
+    ('Webert ESTRAME', 'webertestrameing@yahoo.fr'),
+    ('Ritchy MICHEL', 'richymichel@yahoo.fr')
+)
 
 
 # Application definition
@@ -36,6 +43,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+	'application',
+    'webertritchy',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -57,8 +66,12 @@ WSGI_APPLICATION = 'webertritchy.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'database_projet',
+		'USER': 'webritch',
+		'PASSWORD': 'password',
+		'HOST': 'localhost',
+		'PORT': '5433',
     }
 }
 
@@ -81,8 +94,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 # Parse database configuration from $DATABASE_URL
-import dj_database_url
-DATABASES['default'] =  dj_database_url.config()
+#import dj_database_url
+#DATABASES['default'] =  dj_database_url.config()
 
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
@@ -98,4 +111,11 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
+    "webertritchy/templates/static"
 )
+
+TEMPLATE_DIRS = (
+    os.path.join(os.path.dirname(__file__),'templates').replace('\\','/'),
+)
+
+APPEND_SLASH = True #Ajouter un slash en fin d'URL

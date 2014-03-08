@@ -1,0 +1,8 @@
+<h1>lister professeur</h1>
+        <fieldset>
+{% for pro in l3 %}
+        <table>
+<td>{{pro.nom_prof}}-{{pro.prenom_prof}}-{{pro.profession}}-{{pro.matiere_enseignee}}-{{pro.user}}-{{pro.password}}</td>
+            </table>
+{% endfor %}
+            </fieldset>

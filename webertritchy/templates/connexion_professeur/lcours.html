@@ -1,0 +1,8 @@
+<h1>lister cours</h1>
+        <fieldset>
+{% for cour in l %}
+        <table>
+<td>{{cour.nom_cours}}-{{cour.ressources}}-{{cour.credits}}</td>
+            </table>
+{% endfor %}
+            </fieldset>

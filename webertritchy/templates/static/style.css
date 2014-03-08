@@ -1,0 +1,226 @@
+
+{% load staticfiles %}
+body
+{
+text-align: center;
+font-family: 'Trebuchet MS', Arial, sans-serif;
+/*background-color: rgb(182,203,237)*/;
+color: black;
+background: url('Image/logo.jpg');
+background-attachment:fixed;
+background-repeat: no-repeat;
+}
+body, div, footer{
+margin:0px;
+padding:0px;
+}
+
+header
+{
+background: rgb(182,203,237);
+}
+
+header h1
+{
+display:inline-block;
+color: red;
+font-style: italic;
+text-decoration: blink;
+text-shadow: 2px 2px 4px black;
+	
+}
+
+
+#menu{
+	width: 100%;
+	margin: 0px;
+	padding: 0px 0 0 0;
+    list-style: none;  
+	background: #111;
+	background: -moz-linear-gradient(#444, #111); 
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(0, #111),),color-stop(1, #444));	
+	background: -webkit-linear-gradient(#444, #111);	
+	background: -o-linear-gradient(#444, #111);
+	background: -ms-linear-gradient(#444, #111);
+	background: linear-gradient(#444, #111);
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	-moz-box-shadow: 0 2px 1px #9c9c9c;
+	-webkit-box-shadow: 0 2px 1px #9c9c9c;
+	-moz-box-shadow: 0 2px 1px #9c9c9c;
+	-webkit-box-shadow: 0 2px 1px #9c9c9c;
+	box-shadow: 0 2px 1px #9c9c9c;
+	
+	
+	 margin-top: 0px;
+
+
+    position: relative;
+    margin-bottom:  10px;
+
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#menu a{
+	float: left;
+	height: 25px;
+	padding: 0 4px;
+	color: rgb(255,255,255);
+	text-transform: uppercase;
+	font: bold 12px/25px Arial, Helvetica;
+	text-decoration: none;
+	text-shadow: 0 1px 0 #000;
+}
+#menu li:hover > a{
+	color: #fafafa;
+}
+
+*html #menu li a:hover{ /* IE6 */
+	color: #fafafa;
+}
+
+#menu li:hover > ul{
+	display: block;
+}
+#menu ul{
+	list-style: none;
+    margin: 0;
+    padding: 0;    
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    z-index: 99999;    
+    background: #444;
+    background: -moz-linear-gradient(#444, #111);
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(0, #111),color-stop(1, #444));
+    background: -webkit-linear-gradient(#444, #111);    
+    background: -o-linear-gradient(#444, #111);	
+   background: -ms-linear-gradient(#444, #111);	
+    background: linear-gradient(#444, #111);	
+    -moz-border-radius: 5px;
+   border-radius: 5px;
+}
+#menu ul li{
+    float: none;
+    margin: 0;
+    padding: 0;
+    display: block;  
+    -moz-box-shadow: 0 1px 0 #111111,0 2px 0 #777777;
+    -webkit-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+    box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+}
+#menu ul li:last-child{   
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none; 
+	}
+
+	#menu ul a{    
+    padding: 10px;
+    height: auto;
+    line-height: 1;
+    display: block;
+    white-space: nowrap;
+    float: none;
+    text-transform: none;
+}
+#menu ul a:hover{
+    background: #0186ba;
+	background: -moz-linear-gradient(#04acec, white);	/*#0186ba*/
+	background: -webkit-gradient(linear, left top, left bottom, from(#04acec), to(#0186ba));background: -webkit-linear-gradient(#04acec,  #0186ba);
+	background: -o-linear-gradient(#04acec,  #0186ba);
+	background: -ms-linear-gradient(#04acec,  #0186ba);
+	background: linear-gradient(#04acec,  #0186ba);
+}
+#menu:after{
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+#menu
+{
+	position:relative;
+	width: 1300px;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align:left; 
+}
+
+article, aside
+{
+display: inline-block;
+vertical-align: top;
+text-align: justify;
+}
+
+aside
+{
+position: relative;
+width: 235px;
+background-color: rgb(182,203,237);
+box-shadow: 0px 2px 5px #1c1a19;
+border-radius: 5px;
+padding: 10px;
+color: black;
+font-size: 0.9em;
+}
+
+aside img
+{
+margin-right: 5px;
+}
+
+footer
+{
+background-color: rgb(182,203,237);
+}
+footer p, footer ul
+{
+font-size: 0.8em;
+}
+footer h1
+{
+font-size: 1.1em;
+}
+#pied
+{
+display: inline-block;
+vertical-align: top;
+
+}
+#tweet
+{
+width: 28%;
+}
+#mes_photos
+{
+width: 35%;
+}
+#mes_amis
+{
+width: 31%;
+}
+#mes_photos img
+{
+border: 1px solid #181818;
+margin-right: 2px;
+}
+#mes_amis ul
+{
+display: inline-block;
+vertical-align: top;
+margin-top: 0;
+width: 48%;
+
+padding-left: 2px;
+}
+#mes_amis a
+{
+text-decoration: none;
+color: #760001;
+}

@@ -1,0 +1,8 @@
+<h1>lister programme</h1>
+        <fieldset>
+{% for prog in l1 %}
+        <table>
+<td>{{prog.domaine}}-{{prog.mention}}-{{prog.specialite}}-{{prog.langue}}-{{prog.niveau}}</td>
+            </table>
+{% endfor %}
+            </fieldset>

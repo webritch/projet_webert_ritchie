@@ -1,0 +1,91 @@
+
+<!DOCTYPE HTML>
+<html>
+{% load staticfiles %}
+		<head>
+		    <meta charset="utf-8" />
+			<link rel="stylesheet" href="{% static 'style.css' %}" />
+			<title>ESIH</title>
+		</head>
+	<body>
+		
+		
+		
+                    <header>
+					
+					<center><img src="{% static 'logo.jpg' %}" height= "100" width= "150" alt="Logo de ESIH" />
+					<h1>Ecole Supérieure d'Infotronique d'Haiti...</h1>
+					</center>
+					
+					</header>
+	                   
+					
+		<nav> 
+					<ul   id="menu">
+						  
+						<li><div><font face="Tahoma"><B><a href="../loginadmin" class="style1">Administration</a></B></font></li>
+					    <li><font face="Tahoma"><B><a href="../loginprof" class="style1">Professeur</a></B></font></li>
+                            
+					<div align="right"><Table border=0 text="White" >
+                    <tr>
+	                <td><input type=text name="Recherche"></td>
+	                <td><input type="submit" value="OK"></td>
+                    </tr>
+                    </table>					
+							
+							</div>	
+                             </div >
+
+                   					 
+		            </ul>
+					
+					
+					
+		</nav>
+		<section>
+		        <article>
+				        <table>
+						 <tr>
+								<th><img src="{% static 'tableau.jpg' %}" width=550 height=550 alt="Photo" /></th>
+								<td><p><b>Tableau de bord     </b></p>
+								
+					
+						</tr>
+							
+                        
+							
+						      
+						</table>
+				</article>
+				            <aside>
+							      <h1><center> ESIH</center></h1>
+                                                <p id="photo"><marquee><img
+                                                   src="{% static 'imgMarquee1.jpg' %}" width="250" height="150" alt="Photo" /> <img src="{% static 'imgMarquee2.jpg' %}" height= "150" width= "250" alt=""/>
+												   <img src="{% static 'imgMarquee3.jpg' %}" height= "150" width= "250 alt="/>  <img src="{% static 'imgMarquee4.jpg' %}" height= "150" width= "250" alt=""/></marquee></p>
+
+                                                 <p>Fondée en 1995 à Port-au-Prince, Haïti, l'Ecole Supérieure d'Infotronique d'Haïti (ESIH) a été la première université en Haïti
+												 à se spécialiser dans l'informatique et de l'information et de la technologie des communications. ESIH propose des cours de baccalauréat
+												 et de niveau master à 750 étudiants de Haïti et la région des Caraïbes, et elle emploie environ 54 professeurs et employés à temps plein 
+												 et à temps partiel.</p> 
+							 </aside>
+		</section>
+		
+		
+		 <footer>
+					  
+
+<div id="pied">
+<h1>Rejoignez nous sur</h1>
+<p><a href="http://www.facebook.com/esihhaiti?fref=ts" title="facebook"><img src="{% static 'face.jpg' %}" alt="Facebook"/ ></a>
+<a href="http://www.twitter.com" title="twitter"><img src="{% static 'twitter.jpg' %}" height="50" width="50" alt="Twitter" /></a></p>
+<p><a href="http://www.esih.edu/" title="site de l'ecole">www.esi.edu</a></p>
+</div>
+
+
+                       <p>Copyright - Tous droits reserves<br /></p>
+                      </footer>
+              
+		
+	</body>
+		
+</html>
