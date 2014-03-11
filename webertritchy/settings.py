@@ -23,9 +23,11 @@ SECRET_KEY = 'k@(fi18t0v&-l!gu)!a^uaqn&9*9-axkh_@pjt6!u%*ci)iv8n'
 DEBUG = True
 
 #TEMPLATE_DEBUG = True # dans site du zero on met DEBUG
-TEMPLATE_DEBUG = DEBUG # dans site du zero on met DEBUG
+TEMPLATE_DEBUG = True # dans site du zero on met DEBUG
 
 ALLOWED_HOSTS = []
+
+SITE_ID=1
 
 #Je viens d'ajouter admins
 ADMINS = (
@@ -94,8 +96,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 # Parse database configuration from $DATABASE_URL
-import dj_database_url
-DATABASES['default'] =  dj_database_url.config()
+#import dj_database_url
+#DATABASES['default'] =  dj_database_url.config()
 
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
