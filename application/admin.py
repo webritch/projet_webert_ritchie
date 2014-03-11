@@ -1,5 +1,5 @@
 from django.contrib import admin
-from models import Cours, Programme, Prof, Plan_cours, descriptif
+from models import *
 # Register your models here.
 
 admin.site.register(Cours)
