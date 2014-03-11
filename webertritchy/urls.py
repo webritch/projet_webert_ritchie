@@ -27,10 +27,10 @@ urlpatterns = patterns('application.views',
                              # url(r'^home/$', 'blog.views.accueil'), chercher a comprendre pourquoi ca a donne l'erreur
                                # url(r'^blog/', include('blog.urls')),
 
-                                # url(r'^admin/', include(admin.site.urls)),
+                                url(r'^', include(admin.site.urls)),
                                 # url(r'^$', 'webertritchy.views.home'),
 )
 
-urlpatterns = patterns('',
-                       url(r'^$', include(admin.site.urls)),
-)
+#urlpatterns = patterns('',
+#                       url(r'^admin$', include(admin.site.urls)),
+#)
