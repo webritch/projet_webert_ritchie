@@ -8,7 +8,7 @@ from django.conf.urls import patterns, url
 
 admin.autodiscover()
 
-#urlpatterns = patterns('application.views',
+urlpatterns = patterns('application.views',
                               #url(r'^$', 'accueil', name='accueil'),
                               #url(r'^loginadmin$', 'FormulaireLoginAdmin'),
                               #url(r'^loginprof$', 'FormulaireLoginProf'),
@@ -29,10 +29,8 @@ admin.autodiscover()
 
                                 # url(r'^admin/', include(admin.site.urls)),
                                 # url(r'^$', 'webertritchy.views.home'),
-#)
+)
 
 urlpatterns = patterns('',
                        url(r'^admin/', include(admin.site.urls)),
-
-
 )
